@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class TransformMonoBehaviour : MonoBehaviour, ITransformMonoBehaviour
+public class TransformMonoBehaviour : MonoBehaviour, ITransformMonoBehaviour, IInitializable
 {
     // CAUTION:
     // Initialize() is needed because of Awake() might be not called yet when this instance is referenced.
@@ -14,7 +14,7 @@ public class TransformMonoBehaviour : MonoBehaviour, ITransformMonoBehaviour
         protected set;
     }
 
-    public bool IsInitialized 
+    public bool IsInitialized
     {
         get;
         protected set;
